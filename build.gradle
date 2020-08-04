@@ -23,7 +23,6 @@ buildscript {
         classpath "gradle.plugin.com.google.cloud.tools:jib-gradle-plugin:${project.jibVersion}"
         classpath "io.freefair.gradle:maven-plugin:${project.gradleMavenPluginVersion}"
         classpath "io.freefair.gradle:lombok-plugin:${project.gradleLombokPluginVersion}"
-		compile "org.apereo.cas:cas-server-support-json-service-registry:${project.'cas.version'}"
     }
 }
 
@@ -73,6 +72,7 @@ apply from: rootProject.file("gradle/dockerjib.gradle")
 dependencies {
     // Other CAS dependencies/modules may be listed here...
     // implementation "org.apereo.cas:cas-server-support-json-service-registry:${casServerVersion}"
+	compile "org.apereo.cas:cas-server-support-json-service-registry:${project.'cas.version'}"
 }
 
 tasks.findByName("jibDockerBuild")
