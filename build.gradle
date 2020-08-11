@@ -57,6 +57,7 @@ def casWebApplicationBinaryName = "cas.war"
 
 project.ext."casServerVersion" = casServerVersion
 project.ext."casWebApplicationBinaryName" = casWebApplicationBinaryName
+project.ext."cas.standalone.configurationDirectory" = "/etc/cas/config"
 
 apply plugin: "io.freefair.war-overlay"
 apply plugin: "io.freefair.lombok"
