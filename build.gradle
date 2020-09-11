@@ -75,6 +75,8 @@ dependencies {
     implementation "org.apereo.cas:cas-server-support-json-service-registry:${casServerVersion}"
 	compile "org.apereo.cas:cas-server-webapp-tomcat:${casServerVersion}"
     compile "org.apereo.cas:cas-server-support-jdbc:${casServerVersion}"
+	compile "org.apereo.cas:cas-server-support-pm-webflow:${casServerVersion}"
+	compile "org.apereo.cas:cas-server-support-pm-jdbc:${casServerVersion}"
 }
 
 tasks.findByName("jibDockerBuild")
